@@ -12,6 +12,7 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\StatisticController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 
 //Rutas publicas
 Route::post('/login', [AuthController::class, 'login']);
@@ -37,6 +38,15 @@ Route::middleware(['auth:api', 'role:admin'])->group(function(){
 
     Route::post('/maps', [MapController::class, 'newMap']);
     Route::patch('/maps/{map}', [MapController::class, 'editMap']);
+
+    Route::get('/countries', function () {
+    return response()->json(
+        json_decode(
+            Storage::disk('public')->get('countries.json'),
+            true
+        )
+    );
+});
 });
 
 //Rutas para roles admin y assistant
