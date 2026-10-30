@@ -1,0 +1,156 @@
+[
+    {
+        "email": "brimstone@gmail.com",
+        "password": "brimstone123",
+        "role_name": "admin"
+    },
+
+    {
+        "email": "viper@gmail.com",
+        "password": "viper123",
+        "role_name": "assistant"
+    },
+
+    {
+        "email": "omen@gmail.com",
+        "password": "omen123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "killjoy@gmail.com",
+        "password": "killjoy123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "cypher@gmail.com",
+        "password": "cypher123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "sova@gmail.com",
+        "password": "sova123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "sage@gmail.com",
+        "password": "sage123",
+        "role_name": "assistant"
+    },
+
+    {
+        "email": "phoenix@gmail.com",
+        "password": "phoenix123",
+        "role_name": "agent"
+    },
+    {
+        "email": "jett@gmail.com",
+        "password": "jett123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "reyna@gmail.com",
+        "password": "reyna123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "raze@gmail.com",
+        "password": "raze123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "breach@gmail.com",
+        "password": "breach123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "skye@gmail.com",
+        "password": "skye123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "yoru@gmail.com",
+        "password": "yoru123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "astra@gmail.com",
+        "password": "astra123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "kayo@gmail.com",
+        "password": "kayo123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "chamber@gmail.com",
+        "password": "chamber123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "neon@gmail.com",
+        "password": "neon123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "fade@gmail.com",
+        "password": "fade123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "harbor@gmail.com",
+        "password": "harbor123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "gekko@gmail.com",
+        "password": "gekko123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "deadlock@gmail.com",
+        "password": "deadlock123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "iso@gmail.com",
+        "password": "iso123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "clove@gmail.com",
+        "password": "clove123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "vyse@gmail.com",
+        "password": "vyse123",
+        "role_name": "agent"
+    },
+
+    {
+        "email": "tejo@gmail.com",
+        "password": "tejo123",
+        "role_name": "agent"
+    }
+]

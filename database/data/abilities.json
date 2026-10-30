@@ -1,0 +1,730 @@
+[
+    {
+        "agent_name": "Brimstone",
+        "icon": "Incendiary.webp",
+        "name": "La Incendiaria",
+        "description": "EQUIPA un lanzagranadas incendiario y DISPARA para lanzar una granada que explota cuando se detiene en el suelo. Esta crea una zona de fuego que permanece en el campo y daña a los enemigos que estén dentro de ella."
+    },
+
+    {
+        "agent_name": "Brimstone",
+        "icon": "Sky_Smoke.webp",
+        "name": "Humo Celestial",
+        "description": "EQUIPA un mapa táctico y DISPARA para marcar las ubicaciones en las que caerán las nubes de humo de Brimstone. Usa el DISPARO SECUNDARIO para confirmar y lanzar nubes de humo duraderas que bloquearán la visión en la zona seleccionada."
+    },
+
+    {
+        "agent_name": "Brimstone",
+        "icon": "Stim_Beacon.webp",
+        "name": "Baliza Potenciadora",
+        "description": "EQUIPA una baliza potenciadora y DISPARA para lanzarla frente a Brimstone. Al caer, Resguardo Potenciador creará un campo que aumenta la velocidad de disparo de los jugadores."
+    },
+
+    {
+        "agent_name": "Brimstone",
+        "icon": "Orbital_Strike.webp",
+        "name": "Ataque Orbital",
+        "description": "EQUIPA un mapa estratégico y DISPARA para lanzar un ataque orbital prolongado de un láser en la ubicación seleccionada. Este infligirá daño masivo con el tiempo a los jugadores que estén en la zona."
+    },
+
+    {
+        "agent_name": "Viper",
+        "icon": "Poison_Cloud.webp",
+        "name": "Nube Venenosa",
+        "description": "EQUIPA un lanzador de gas. DISPARA para lanzarlo y que permanezca durante la ronda. Usa el DISPARO SECUNDARIO para lanzarlo por debajo. VUELVE A USAR la habilidad para crear una nube de gas tóxica que usa combustible. Esta habilidad se puede recoger y VOLVER A COLOCAR antes del comienzo de la ronda y se puede VOLVER A USAR más de una vez a lo largo de la misma."
+    },
+
+    {
+        "agent_name": "Viper",
+        "icon": "Toxic_Screen.webp",
+        "name": "Cortina Tóxica",
+        "description": "EQUIPA un lanzador de gas y DISPARA para desplegar una larga hilera de emisores de gas. VUELVE A USAR la habilidad para crear un muro de gas tóxico que usa combustible. Puedes VOLVER A USAR esta habilidad varias veces."
+    },
+
+    {
+        "agent_name": "Viper",
+        "icon": "Snake_Bite.webp",
+        "name": "Mordedura",
+        "description": "EQUIPA un lanzador de químicos. DISPARA para lanzar un contenedor que se rompe al impactar contra el suelo. Este crea una zona química que permanece en el campo, la cual daña y ralentiza a los enemigos."
+    },
+
+    {
+        "agent_name": "Viper",
+        "icon": "Vipers_Pit.webp",
+        "name": "Fosa Vipérea",
+        "description": "EQUIPA un rociador y DISPARA para lanzar una nube de químicos en todas las direcciones alrededor de Viper, lo que crea una gran nube que reduce el alcance de visión y la vida máxima de los jugadores que estén dentro de ella."
+    },
+
+    {
+        "agent_name": "Omen",
+        "icon": "Paranoia.webp",
+        "name": "Paranoia",
+        "description": "Lanza un proyectil de sombras que reduce el alcance de visión de todos los jugadores a los que alcanza durante un breve periodo. Este proyectil puede atravesar paredes."
+    },
+
+    {
+        "agent_name": "Omen",
+        "icon": "Dark_Cover.webp",
+        "name": "Manto Oscuro",
+        "description": "EQUIPA un orbe sombrío y entra a un mundo paralelo para colocarlo y apuntarlo. PRESIONA la tecla de habilidad para lanzarlo hacia la ubicación marcada, creando una esfera de sombras duradera que bloquea la visión. MANTÉN EL DISPARO PRINCIPAL mientras apuntas para alejar el marcador. MANTÉN EL DISPARO SECUNDARIO mientras apuntas para acercar el marcador. PRESIONA RECARGAR para alternar la vista de disparo."
+    },
+
+    {
+        "agent_name": "Omen",
+        "icon": "Shrouded_Step.webp",
+        "name": "Paso Encubierto",
+        "description": "EQUIPA la habilidad Paso Encubierto y mira su indicador de alcance. DISPARA para comenzar una breve canalización y luego teletranspórtate hacia la ubicación marcada."
+    },
+
+    {
+        "agent_name": "Omen",
+        "icon": "From_the_Shadows.webp",
+        "name": "Desde Las Sombras",
+        "description": "EQUIPA un mapa estratégico. DISPARA para empezar a teletransportarte hacia la ubicación seleccionada. Mientras te teletransportas, Omen lucirá como una sombra que los enemigos podrán destruir para cancelar su teletransportación."
+    },
+
+    {
+        "agent_name": "Killjoy",
+        "icon": "Alarmbot.webp",
+        "name": "Alarmabot",
+        "description": "EQUIPA un Alarmabot encubierto. DISPARA para desplegar un bot que caza a los enemigos que entren en su alcance. Después de alcanzar a su objetivo, el bot explota, lo que inflige daño y aplica Vulnerable. MANTÉN PRESIONADO EQUIPAR para recuperar un bot desplegado."
+    },
+
+    {
+        "agent_name": "Killjoy",
+        "icon": "Turret.webp",
+        "name": "Torreta",
+        "description": "EQUIPA una Torreta. DISPARA para desplegar una torreta que les dispara a los enemigos cercanos en un cono de 180 grados. MANTÉN PRESIONADO EQUIPAR para recuperar una torreta desplegada."
+    },
+
+    {
+        "agent_name": "Killjoy",
+        "icon": "Nanoswarm.webp",
+        "name": "Nanoplaga",
+        "description": "EQUIPA una granada de Nanoplaga. DISPARA para lanzar la granada. La Nanoplaga queda encubierta al aterrizar. ACTIVA Nanoplaga para desplegar un mortal enjambre de nanobots."
+    },
+
+    {
+        "agent_name": "Killjoy",
+        "icon": "Lockdown.webp",
+        "name": "Dispositivo Inmovilizador",
+        "description": "EQUIPA el Dispositivo Inmovilizador. DISPARA para desplegar el dispositivo. Tras cargar, el dispositivo detiene a todos los enemigos dentro de su radio. Los enemigos pueden destruir el dispositivo."
+    },
+
+    {
+        "agent_name": "Cypher",
+        "icon": "Cyber_Cage.webp",
+        "name": "Ciberjaula",
+        "description": "Lanza AL INSTANTE una ciberjaula frente a Cypher. Actívala para crear una zona que bloquea la visión y ralentiza a los enemigos que la atraviesan."
+    },
+
+    {
+        "agent_name": "Cypher",
+        "icon": "Spycam.webp",
+        "name": "Cámara Espía",
+        "description": "EQUIPA una cámara espía. DISPARA para colocarla en la ubicación seleccionada. VUELVE A USAR esta habilidad para tomar el control de la vista de la cámara. Mientras la controlas, DISPARA para lanzar un dardo marcador que revelará la ubicación de cualquier jugador al que impacte."
+    },
+
+    {
+        "agent_name": "Cypher",
+        "icon": "Trapwire.webp",
+        "name": "Cable trampa",
+        "description": "EQUIPA una cámara espía. DISPARA para colocarla en la ubicación seleccionada. VUELVE A USAR esta habilidad para tomar el control de la vista de la cámara. Mientras la controlas, DISPARA para lanzar un dardo marcador que revelará la ubicación de cualquier jugador al que impacte. Puedes recogerla para VOLVER A COLOCARLA en otro lugar."
+    },
+
+    {
+        "agent_name": "Cypher",
+        "icon": "Neural_Theft.webp",
+        "name": "Asalto Neural",
+        "description": "Apunta hacia un jugador enemigo muerto y úsalo DE INMEDIATO para revelar la ubicación de todos los jugadores enemigos con vida."
+    },
+
+    {
+        "agent_name": "Sova",
+        "icon": "Shock_Bolt.webp",
+        "name": "Proyectil Eléctrico",
+        "description": "EQUIPA un arco con un proyectil eléctrico y DISPARA para lanzarlo. El proyectil detonará al impactar y dañará a los jugadores cercanos. MANTÉN EL DISPARO PRINCIPAL para aumentar el alcance del proyectil. Usa el DISPARO SECUNDARIO para añadir hasta dos rebotes a su trayectoria."
+    },
+
+    {
+        "agent_name": "Sova",
+        "icon": "Recon_Bolt.webp",
+        "name": "Proyectil Rastreador",
+        "description": "EQUIPA un arco con un proyectil rastreador y DISPARA para lanzarlo. El proyectil se activará al impactar y revelará la ubicación de los enemigos cercanos que estén en la línea de visión del proyectil. Los enemigos pueden destruir este proyectil. MANTÉN EL DISPARO PRINCIPAL para aumentar el alcance del proyectil. Usa el DISPARO SECUNDARIO para añadir hasta dos rebotes a la trayectoria de la flecha."
+    },
+
+    {
+        "agent_name": "Sova",
+        "icon": "Owl_Drone.webp",
+        "name": "Dron Búho",
+        "description": "EQUIPA un Dron Búho y DISPARA para desplegarlo y controlar su movimiento. Mientras lo controlas, DISPARA para lanzar un dardo marcador que revelará la ubicación de cualquier jugador al que impacte. Los enemigos pueden destruir el Dron Búho."
+    },
+
+    {
+        "agent_name": "Sova",
+        "icon": "Hunters_Fury.webp",
+        "name": "Furia Del Cazador",
+        "description": "EQUIPA un arco con tres ráfagas de energía de largo alcance que atraviesan las paredes. DISPARA para lanzar una ráfaga de energía frente a Sova que infligirá daño y revelará la ubicación de los enemigos impactados. Puedes VOLVER A USAR esta habilidad hasta dos veces más mientras su contador esté activo."
+    },
+
+    {
+        "agent_name": "Sage",
+        "icon": "Slow_Orb.webp",
+        "name": "Orbe Ralentizador",
+        "description": "EQUIPA un orbe de ralentización y DISPARA para lanzarlo. Este detonará al caer al suelo y creará un campo que permanecerá en la zona y ralentizará a los jugadores que estén dentro de él."
+    },
+
+    {
+        "agent_name": "Sage",
+        "icon": "Healing_Orb.webp",
+        "name": "Orbe Curativo",
+        "description": "EQUIPA un orbe curativo y DISPARA tras apuntar a un aliado herido para curarlo con el tiempo. Usa el DISPARO SECUNDARIO cuando Sage esté herida para curarla con el tiempo."
+    },
+
+    {
+        "agent_name": "Sage",
+        "icon": "Barrier_Orb.webp",
+        "name": "Orbe De Barrera",
+        "description": "EQUIPA un orbe de barrera. DISPARA para colocar una pared sólida. Usa el DISPARO SECUNDARIO para rotarla antes de crearla."
+    },
+
+    {
+        "agent_name": "Sage",
+        "icon": "Resurrection.webp",
+        "name": "Resurreción",
+        "description": "EQUIPA una habilidad de resurrección y DISPARA mientras apuntas hacia un aliado muerto para comenzar a resucitarlo. Tras un breve periodo de canalización, el aliado revivirá con toda su vida."
+    },
+
+    {
+        "agent_name": "Phoenix",
+        "icon": "Curveball.webp",
+        "name": "Destello En Curva",
+        "description": "EQUIPA un orbe cegador que recorre una trayectoria curva y detona poco después de lanzarlo. DISPARA para cambiar la trayectoria del orbe cegador hacia la izquierda. Este detonará y cegará a cualquier jugador que lo vea. Usa el DISPARO SECUNDARIO para cambiar su trayectoria hacia la derecha."
+    },
+
+    {
+        "agent_name": "Phoenix",
+        "icon": "Hot_Hands.webp",
+        "name": "Mantas Calientes",
+        "description": "EQUIPA una bola de fuego y DISPARA para lanzarla. Esta explotará tras cierto tiempo o al impactar el suelo, lo que creará una zona de fuego que permanecerá en el campo y dañará a los enemigos."
+    },
+
+    {
+        "agent_name": "Phoenix",
+        "icon": "Blaze.webp",
+        "name": "Muro Abrasador",
+        "description": "EQUIPA un muro de fuego y DISPARA para crear una hilera de llamas que avanza, lo que creará un muro que bloquea la visión y dañará a los jugadores que lo atraviesen. MANTÉN PRESIONADO EL BOTÓN DE DISPARO para mover el muro en la dirección de tu retícula."
+    },
+
+    {
+        "agent_name": "Phoenix",
+        "icon": "Run_it_Back.webp",
+        "name": "Va De Fuego",
+        "description": "Coloca al INSTANTE un marcador en la ubicación de Phoenix. Cuando esta habilidad esté activa, morir o dejar que el temporizador expire hará que la habilidad se termine y regresará a Phoenix a esa ubicación con toda su vida."
+    },
+
+    {
+        "agent_name": "Jett",
+        "icon": "Updraft.webp",
+        "name": "Ráfaga Ascendente",
+        "description": "Propulsa a Jett hacia el aire AL INSTANTE."
+    },
+
+    {
+        "agent_name": "Jett",
+        "icon": "Tailwind.webp",
+        "name": "Impulso Ciclón",
+        "description": "ACTIVA para preparar una ráfaga de viento durante un tiempo limitado. VUELVE A USAR el viento para propulsar a Jett en la dirección a la que se dirige. Si no se está moviendo, se propulsará hacia adelante. La carga de Impulso Ciclón se restablece cada dos asesinatos."
+    },
+
+    {
+        "agent_name": "Jett",
+        "icon": "Cloudburst.webp",
+        "name": "Nube Explosiva",
+        "description": "Lanza un proyectil AL INSTANTE que se convierte en una nube que bloquea la visión al impactar alguna superficie. MANTÉN PRESIONADA la tecla de la habilidad para cambiar la trayectoria del humo hacia donde apuntes."
+    },
+
+    {
+        "agent_name": "Jett",
+        "icon": "Blade_Storm.webp",
+        "name": "Tormenta De Cuchillas",
+        "description": "EQUIPA un conjunto de cuchillos arrojadizos de gran precisión. DISPARA para lanzar un cuchillo y recarga los cuchillos al asesinar a un oponente. Usa el DISPARO SECUNDARIO para lanzar todos los cuchillos restantes, pero no se recargan al matar a un oponente."
+    },
+
+    {
+        "agent_name": "Reyna",
+        "icon": "Devour.webp",
+        "name": "Devorar",
+        "description": "Los enemigos eliminados por Reyna dejan orbes de almas que duran 3 seg. Consume al INSTANTE un orbe de almas cercano y la cura rápidamente durante un breve momento. La Vida superior a 100 que obtenga mediante esta habilidad se deteriorará con el tiempo. Si LA EMPERATRIZ está activa, lanzará automáticamente esta habilidad sin consumir el orbe."
+    },
+
+    {
+        "agent_name": "Reyna",
+        "icon": "Dismiss.webp",
+        "name": "Desechar",
+        "description": "Consume al INSTANTE un orbe de almas cercano para volverse intangible durante un breve momento. También se vuelve invisible si LA EMPERATRIZ está activa."
+    },
+
+    {
+        "agent_name": "Reyna",
+        "icon": "Leer.webp",
+        "name": "La Mirada",
+        "description": "EQUIPA un ojo destructible y etéreo. ACTÍVALO para lanzarlo a una corta distancia y todos los enemigos que lo vean se ofuscarán."
+    },
+
+    {
+        "agent_name": "Reyna",
+        "icon": "Empress.webp",
+        "name": "La Emperatriz",
+        "description": "Entra al INSTANTE en un frenesí, lo que aumenta considerablemente la velocidad de disparo, equipamiento y recarga. Al lograr un asesinato, se restablece la duración."
+    },
+
+    {
+        "agent_name": "Raze",
+        "icon": "Blast_Pack.webp",
+        "name": "Paquete Explosivo",
+        "description": "Lanza AL INSTANTE un Paquete Explosivo que se adhiere a las superficies. VUELVE A USAR la habilidad después de desplegar el paquete para detonarlo, lo que dañará y desplazará todo a su alcance. Raze no recibe daño por esta habilidad, pero sí sufrirá daño por caídas si salta muy alto."
+    },
+
+    {
+        "agent_name": "Raze",
+        "icon": "Paint_Shells.webp",
+        "name": "Carcasas De Pintura",
+        "description": "EQUIPA una granada de racimo. DISPARA para lanzar la granada, lo que inflige daño y crea submuniciones que dañan a cualquiera que esté dentro de su alcance. Usa el DISPARO SECUNDARIO para lanzarla bombeada. La carga de Carcasas de Pintura se restablece cada dos asesinatos."
+    },
+
+    {
+        "agent_name": "Raze",
+        "icon": "Boom_Bot.webp",
+        "name": "Bumbot",
+        "description": "EQUIPA un Bumbot y DISPARA para desplegarlo. El bot se moverá en línea recta por el suelo y rebotará en los muros. El Bumbot marcará a cualquier enemigo que se encuentre en un cono frente a él y lo perseguirá. Si lo alcanza, explotará e infligirá daño masivo."
+    },
+
+    {
+        "agent_name": "Raze",
+        "icon": "Showstopper.webp",
+        "name": "Tumbadivas",
+        "description": "EQUIPA un lanzamisiles. DISPARA para lanzar un misil que inflige daño de área masivo al entrar en contacto con algo."
+    },
+
+    {
+        "agent_name": "Breach",
+        "icon": "Flashpoint.webp",
+        "name": "Fulgor",
+        "description": "EQUIPA una carga cegadora y DISPARA para lanzar una ráfaga de acción rápida a través de una pared. La carga detonará y cegará a todos los jugadores que la vean."
+    },
+
+    {
+        "agent_name": "Breach",
+        "icon": "Fault_Line.webp",
+        "name": "Falla Sísmica",
+        "description": "EQUIPA un rayo sísmico y MANTÉN PRESIONADO EL BOTÓN DE DISPARO para aumentar la distancia. SUÉLTALO para iniciar el temblor y aturdir a todos los jugadores que estén en la zona."
+    },
+
+    {
+        "agent_name": "Breach",
+        "icon": "Aftershock.webp",
+        "name": "Réplica",
+        "description": "EQUIPA una carga de fusión y DISPARA para lanzar una ráfaga de acción lenta a través de una pared. La ráfaga infligirá daño masivo a todos los que estén en su alcance."
+    },
+
+    {
+        "agent_name": "Breach",
+        "icon": "Rolling_Thunder.webp",
+        "name": "Trueno Rodante",
+        "description": "EQUIPA una carga sísmica y DISPARA para enviar un temblor en cascada por una gran zona cónica. El temblor aturde y lanza por el aire a todos los que impacta."
+    },
+
+    {
+        "agent_name": "Skye",
+        "icon": "Trailblazer.webp",
+        "name": "Forjacaminos",
+        "description": "TE EQUIPAS un artefacto de tigre de Tasmania. DISPARA para enviar y tomar el control del depredador. Mientras lo controlas, DISPARA para saltar hacia adelante, lo que provoca una explosión contusiva e inflige daño a los enemigos alcanzados directamente."
+    },
+
+    {
+        "agent_name": "Skye",
+        "icon": "Guiding_Light.webp",
+        "name": "Luz Guía",
+        "description": "TE EQUIPAS un artefacto de halcón. DISPARA para enviarlo hacia adelante. MANTÉN PRESIONADO EL DISPARO para guiar al halcón en la dirección de tu retícula. REUTILÍZALA mientras el halcón está en vuelo para transformarlo en un destello que lanza un sonido de confirmación si un enemigo estaba dentro del alcance y campo visual."
+    },
+
+    {
+        "agent_name": "Skye",
+        "icon": "Regrowth.webp",
+        "name": "Regeneración",
+        "description": "TE EQUIPAS un artefacto de curación. MANTÉN PRESIONADO EL DISPARO para canalizar, lo que cura aliados dentro del alcance y campo visual. Se puede reutilizar hasta que se agote la energía de curación. Skye no puede curarse a sí misma."
+    },
+
+    {
+        "agent_name": "Skye",
+        "icon": "Seekers.webp",
+        "name": "Buscadores",
+        "description": "EQUIPA un artefacto de Buscador. DISPARA para enviar a tres Buscadores para rastrear a los tres enemigos más cercanos. Si un Buscador alcanza a su objetivo, lo ofusca. Los enemigos pueden destruir los Buscadores."
+    },
+
+    {
+        "agent_name": "Yoru",
+        "icon": "Blindside.webp",
+        "name": "Punto Ciego",
+        "description": "EQUÍPALO para arrancar un fragmento dimensional inestable de la realidad. DISPARA para lanzar el fragmento, lo que activa un destello que se disipa al impactar con una superficie sólida."
+    },
+
+    {
+        "agent_name": "Yoru",
+        "icon": "Gatecrash.webp",
+        "name": "Inflitración",
+        "description": "EQUIPA un vínculo dimensional. DISPARA para lanzar el vínculo hacia adelante. Usa el DISPARO SECUNDARIO para colocar un vínculo en el lugar. ACTÍVALO para teletransportarte a la ubicación del vínculo. ÚSALO para activar una teletransportación falsa."
+    },
+
+    {
+        "agent_name": "Yoru",
+        "icon": "Fakeout.webp",
+        "name": "Engaño",
+        "description": "EQUIPA un eco que imita el sonido de pisadas cuando se activa. DISPARA para activarlo y enviar el eco hacia adelante. Usa el DISPARO SECUNDARIO para colocar un eco en el lugar. USA el eco inactivo para enviarlo hacia adelante."
+    },
+
+    {
+        "agent_name": "Yoru",
+        "icon": "Dimensional_Drift.webp",
+        "name": "Cambio Dimensional",
+        "description": "EQUIPA una máscara para ver entre dimensiones. DISPARA para entrar a la dimensión de Yoru, donde los enemigos no pueden verte ni afectarte. REACTÍVALO para salir anticipadamente de la dimensión de Yoru."
+    },
+
+    {
+        "agent_name": "Astra",
+        "icon": "Nova_Pulse.webp",
+        "name": "Pulso Estelar",
+        "description": "Coloca estrellas en Modo Astral. ACTIVA una estrella para detonar un Pulso Estelar. El Pulso Estelar carga brevemente y luego ataca, lo que aturde a todos los jugadores en el área."
+    },
+
+    {
+        "agent_name": "Astra",
+        "icon": "Nebula_-_Dissipate.webp",
+        "name": "Nebulosa",
+        "description": "Coloca estrellas en Modo Astral. ACTIVA una estrella para transformarla en una Nebulosa (humo).USA una estrella para Disiparla, lo que devuelve la estrella para colocarla en una nueva ubicación después de un momento. Disipar forma una Nebulosa falsa brevemente en la ubicación de la estrella antes de regresar."
+    },
+
+    {
+        "agent_name": "Astra",
+        "icon": "Gravity_Well.webp",
+        "name": "Pozo Gravitacional",
+        "description": "Coloca estrellas en Modo Astral (X). ACTIVA una estrella para formar un Pozo Gravitacional. Los jugadores en el área son atraídos hacia el centro antes de que estalle, lo que causa que todos los jugadores que aún siguen atrapados se vuelvan vulnerables."
+    },
+
+    {
+        "agent_name": "Astra",
+        "icon": "Cosmic_Divide.webp",
+        "name": "Modo Astral / Divisón Cósmica",
+        "description": "ACTIVA para entrar en Modo Astral donde puedes colocar estrellas con tu DISPARO PRINCIPAL. Puedes reactivar las estrellas más tarde, lo que las transforma en un Pulso Estelar, Nebulosa o Pozo Gravitacional. Cuando División Cósmica esté cargada, usa el DISPARO SECUNDARIO en Modo Astral para apuntarla, luego el DISPARO PRINCIPAL para elegir dos ubicaciones. Una División Cósmica infinita conecta los dos puntos que elegiste. División Cósmica bloquea las balas y amortigua considerablemente el audio."
+    },
+
+    {
+        "agent_name": "KAY/O",
+        "icon": "FLASH-drive.webp",
+        "name": "Memoria/Flash",
+        "description": "EQUIPA una granada cegadora. DISPARA para lanzarla por encima. Usa el DISPARO SECUNDARIO para lanzar una versión más débil que explota rápidamente. La granada cegadora explota luego de un corto tiempo y ciega a cualquiera que esté en la línea de visión."
+    },
+
+    {
+        "agent_name": "KAY/O",
+        "icon": "ZERO-point.webp",
+        "name": "Punto/Cero",
+        "description": "EQUIPA una cuchilla supresora. DISPARA para lanzarla. La cuchilla se adhiere a la primera superficie que toca para activarse y suprimir a cualquiera dentro del radio de explosión. Los enemigos pueden destruir la cuchilla."
+    },
+
+    {
+        "agent_name": "KAY/O",
+        "icon": "FRAG-ment.webp",
+        "name": "Frag/mentación",
+        "description": "EQUIPA un fragmento explosivo. DISPARA para lanzarlo. El fragmento se pega al piso y explota varias veces, lo que inflige daño casi mortal en el centro con cada explosión."
+    },
+
+    {
+        "agent_name": "KAY/O",
+        "icon": "NULL-cmd.webp",
+        "name": "Null/CMD",
+        "description": "Se sobrecarga INSTANTÁNEAMENTE con energía polarizada de radianita que emana de KAY/O en un radio masivo. Los enemigos impactados por las ondas de energía quedan suprimidos durante un breve periodo. Mientras está sobrecargado, KAY/O obtiene Potenciador de combate y se puede volver a estabilizar si lo derriban."
+    },
+
+    {
+        "agent_name": "Chamber",
+        "icon": "Headhunter.webp",
+        "name": "Cazador De Cabezas",
+        "description": "ACTÍVALA para equipar una pistola pesada. Presiona DISPARO SECUNDARIO con la pistola equipada para usar la mira."
+    },
+
+    {
+        "agent_name": "Chamber",
+        "icon": "Rendezvous.webp",
+        "name": "Rendezvous",
+        "description": "EQUIPA un anclaje de teletransportación. DISPARA para colocarlo en el suelo. Mientras estés en el suelo y dentro de su zona de alcance, REACTIVA para teletransportarte rápidamente al anclaje. Puedes recoger el anclaje para VOLVER A COLOCARLO en otro lugar."
+    },
+
+    {
+        "agent_name": "Chamber",
+        "icon": "Trademark.webp",
+        "name": "Marca Registrada",
+        "description": "EQUIPA una trampa que escanea los alrededores buscando enemigos. DISPARA para colocarlo en el suelo. Cuando un enemigo visible entra en contacto, esta comienza una cuenta regresiva que, al terminar, desestabiliza el terreno a su alrededor y crea un área que permanece en la zona y ralentiza a los enemigos dentro de ella. Puedes recoger la trampa para VOLVER A COLOCARLA en otro lugar."
+    },
+
+    {
+        "agent_name": "Chamber",
+        "icon": "Tour_De_Force.webp",
+        "name": "Tour De Force",
+        "description": "ACTIVA para invocar un poderoso rifle de francotirador personalizado que mata a un enemigo con cualquier impacto directo en la parte superior del cuerpo. Usa el DISPARO SECUNDARIO para apuntar con la mira. Matar a un enemigo crea un área que permanece en la zona y ralentiza a los jugadores que queden dentro de ella."
+    },
+
+    {
+        "agent_name": "Neon",
+        "icon": "Relay_Bolt.webp",
+        "name": "Electrorrebote",
+        "description": "Lanza un rayo de energía INSTANTÁNEO que rebota una vez. Luego de golpear cada superficie, el rayo electrifica el terreno debajo, lo que provoca una explosión conmocionante."
+    },
+
+    {
+        "agent_name": "Neon",
+        "icon": "High_Gear.webp",
+        "name": "Velocidad Relámpago",
+        "description": "Canaliza INSTANTÁNEAMENTE el poder de Neon para aumentar su velocidad. Al cargarse, utiliza el DISPARO SECUNDARIO para activar un deslizamiento eléctrico. La carga del deslizamiento se reinicia cada dos asesinatos."
+    },
+
+    {
+        "agent_name": "Neon",
+        "icon": "Fast_Lane.webp",
+        "name": "Carril Rápido",
+        "description": "DISPARA dos líneas de energía hacia adelante por el suelo que se extienden por una corta distancia o hasta golpear contra una superficie. Las líneas se convierten en paredes de electricidad estática que bloquean la visión y dañan a cualquier enemigo que quiera atravesarlas."
+    },
+
+    {
+        "agent_name": "Neon",
+        "icon": "Overdrive.webp",
+        "name": "Potencia Máxima",
+        "description": "Desata todo el poder y la velocidad de Neon por un tiempo corto. DISPARA para canalizar todo su poder en un rayo mortal con gran precisión de movimiento. La duración se reinicia con cada asesinato."
+    },
+
+    {
+        "agent_name": "Fade",
+        "icon": "Seize.webp",
+        "name": "Capturar",
+        "description": "Equipa un orbe de tinta de las pesadillas. DISPARA para lanzar el orbe, el cual caerá en picada al suelo después de un tiempo determinado. Al impactar contra el suelo, la tinta explotará y creará una zona en la que los enemigos que queden atrapados en ella no podrán escapar por medios normales. VUELVE A USAR la habilidad para dejar caer el proyectil anticipadamente mientras vuela."
+    },
+
+    {
+        "agent_name": "Fade",
+        "icon": "Haunt.webp",
+        "name": "Atormentar",
+        "description": "Equipa una entidad de las pesadillas. DISPARA para lanzar el orbe, el cual caerá en picada al suelo después de un tiempo determinado. Al impactar contra el suelo, el orbe se convertirá en un ente de las pesadillas que revelará la ubicación de los enemigos en su línea de visión. Los enemigos pueden destruir esta entidad. VUELVE A USAR la habilidad para dejar caer el proyectil anticipadamente mientras vuela."
+    },
+
+    {
+        "agent_name": "Fade",
+        "icon": "Prowler.webp",
+        "name": "Acechadora",
+        "description": "EQUIPA una Acechadora. DISPARA para lanzar a la Acechadora, que viajará en línea recta. La Acechadora se enfocará en cualquier enemigo o rastro en su cono de visión frontal y lo perseguirá y ofuscará si lo alcanza. MANTÉN PRESIONADO el botón de DISPARO para guiar a la Acechadora en la dirección de tu retícula."
+    },
+
+    {
+        "agent_name": "Fade",
+        "icon": "Nightfall.webp",
+        "name": "Anochecer",
+        "description": "EQUIPA el poder del Miedo. DISPARA para lanzar una onda de energía de las pesadillas que puede atravesar paredes. La energía crea un rastro hacia el oponente, además de ensordecerlo y debilitarlo."
+    },
+
+    {
+        "agent_name": "Harbor",
+        "icon": "Cove.webp",
+        "name": "Domo",
+        "description": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas."
+    },
+
+    {
+        "agent_name": "Harbor",
+        "icon": "High_Tide.webp",
+        "name": "Marea Alta",
+        "description": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS."
+    },
+
+    {
+        "agent_name": "Harbor",
+        "icon": "Cascade.webp",
+        "name": "Cascada",
+        "description": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS."
+    },
+
+    {
+        "agent_name": "Harbor",
+        "icon": "Reckoning.webp",
+        "name": "Cataclismo",
+        "description": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS."
+    },
+
+    {
+        "agent_name": "Gekko",
+        "icon": "Wingman.webp",
+        "name": "Carnalito",
+        "description": "EQUIPA a Carnalito. DISPARA para enviar a Carnalito hacia adelante en busca de enemigos; Carnalito libera una explosión contusiva hacia el primer enemigo que ve. Usa DISPARO SECUNDARIO al apuntar a un sitio de Spike o a una Spike plantada para que Carnalito plante o desactive la Spike, respectivamente. Para que la plante, Gekko debe tener la Spike en su inventario. Cuando Carnalito se agota, regresa a su forma de glóbulo en reposo; INTERACTÚA para recuperar el glóbulo y obtener otra carga de Carnalito tras un breve enfriamiento."
+    },
+
+    {
+        "agent_name": "Gekko",
+        "icon": "Dizzy.webp",
+        "name": "Vértigo",
+        "description": "EQUIPA a Vértigo. DISPARA para enviar a Vértigo volando hacia adelante. Vértigo carga y luego libera explosiones de plasma contra los enemigos en su campo de visión; los enemigos alcanzados por su plasma quedan cegados. Cuando Vértigo se agota, regresa a su forma de glóbulo en reposo; INTERACTÚA para recuperar el glóbulo y obtener otra carga de Vértigo tras un breve enfriamiento."
+    },
+
+    {
+        "agent_name": "Gekko",
+        "icon": "Mosh_Pit.webp",
+        "name": "Pogo Brutal",
+        "description": "EQUIPA a Pogo. DISPARA para lanzar a Pogo como una granada; presiona el DISPARO SECUNDARIO para lanzarlo por abajo. Al aterrizar, Pogo se duplica en una amplia zona y explota después de un corto lapso de tiempo."
+    },
+
+    {
+        "agent_name": "Gekko",
+        "icon": "Thrash.webp",
+        "name": "Paliza",
+        "description": "EQUIPA a Paliza. DISPARA para vincularte con la mente de Paliza y dirigirla a través del territorio enemigo; ACTIVA para embestir hacia adelante y explotar, lo que inmoviliza a los enemigos en un pequeño radio. Cuando Paliza se agota, regresa a su forma de glóbulo en reposo; INTERACTÚA para recuperar el glóbulo y obtener otra carga de Paliza tras un breve enfriamiento. Solo se puede recuperar a Paliza una vez."
+    },
+
+    {
+        "agent_name": "Deadlock",
+        "icon": "Sonic_Sensor.webp",
+        "name": "Sensor Sónico",
+        "description": "EQUIPA un Sensor Sónico. DISPARA para desplegarlo. El sensor vigila un área en busca de enemigos que emitan sonidos. Conmociona la zona si detecta pisadas, disparos o una cantidad de ruido significativa."
+    },
+
+    {
+        "agent_name": "Deadlock",
+        "icon": "Barrier_Mesh.webp",
+        "name": "Malla Protectora",
+        "description": "EQUIPA un disco de Malla Protectora. DISPARA para lanzarlo hacia adelante. Al caer, el disco genera barreras desde el punto de origen que bloquean el movimiento de los personajes."
+    },
+
+    {
+        "agent_name": "Deadlock",
+        "icon": "GravNet.webp",
+        "name": "Gravnet",
+        "description": "EQUIPA una granada GravNet. DISPARA para lanzarla. Usa el DISPARO SECUNDARIO para lanzar la granada por debajo. La granada GravNet explota al caer y fuerza a los enemigos que se encuentren en la zona a agacharse y a moverse con lentitud."
+    },
+
+    {
+        "agent_name": "Deadlock",
+        "icon": "Annihilation.webp",
+        "name": "Aniquilación",
+        "description": "EQUIPA un Acelerador de Nanocables. DISPARA para liberar un pulso de nanocables que capturan al primer enemigo con el que entren en contacto. El enemigo atrapado es arrastrado por un sendero de nanocables y morirá si llega al final, a menos que se libere antes. El capullo de nanocables puede ser destruido."
+    },
+
+    {
+        "agent_name": "Iso",
+        "icon": "Undercut.webp",
+        "name": "Recorte",
+        "description": "EQUIPA un proyectil molecular. Dispara para lanzarlo hacia adelante. El proyectil aplica un breve estado FRÁGIL a todos los jugadores que toque y puede atravesar objetos sólidos, incluidas las paredes."
+    },
+
+    {
+        "agent_name": "Iso",
+        "icon": "Double_Tap.webp",
+        "name": "Remate",
+        "description": "INICIA un temporizador de enfoque. Una vez completado, entra en un estado de fluidez durante el cual los enemigos derribados que mates o dañes generan un orbe de energía. Al dispararle a este orbe obtienes un escudo que absorbe una instancia de daño de cualquier fuente."
+    },
+
+    {
+        "agent_name": "Iso",
+        "icon": "Contingency.webp",
+        "name": "Contingencia",
+        "description": "EQUIPA para reunir energía prismática. DISPARA para impulsar hacia adelante un muro indestructible de energía que bloquea las balas."
+    },
+
+    {
+        "agent_name": "Iso",
+        "icon": "Kill_Contract.webp",
+        "name": "Lista Negra",
+        "description": "EQUIPA una arena interdimensional. DISPARA para lanzar una columna de energía a través del campo de batalla, que te arrastra a ti y al primer enemigo alcanzado a la arena. Tu oponente y tú se baten en un duelo a muerte."
+    },
+
+    {
+        "agent_name": "Clove",
+        "icon": "Meddle.webp",
+        "name": "Carambola",
+        "description": "EQUIPA un fragmento de esencia inmortal. DISPARA para lanzar el fragmento que estalla tras un breve lapso e inflige decrecimiento temporal a todos los objetivos alcanzados."
+    },
+
+    {
+        "agent_name": "Clove",
+        "icon": "Ruse.webp",
+        "name": "Treta",
+        "description": "EQUIPA para ver el campo de batalla. DISPARA para marcar las ubicaciones en las que aparecerán las nubes de Clove. Usa el DISPARO SECUNDARIO para confirmar y lanzar nubes que bloquearán la visión en las zonas seleccionadas. Clove puede usar esta habilidad después de morir."
+    },
+
+    {
+        "agent_name": "Clove",
+        "icon": "Pick-me-up.webp",
+        "name": "Tentempié",
+        "description": "Absorbe INSTANTÁNEAMENTE la fuerza vital de un enemigo caído al que Clove haya infligido daño o asesinado. Esto le otorga velocidad y vida de forma temporal."
+    },
+
+    {
+        "agent_name": "Clove",
+        "icon": "Not_Dead_Yet.webp",
+        "name": "No Morí",
+        "description": "Tras morir, ACTIVA para resucitar. Una vez que resucita, Clove debe conseguir un asesinato o una asistencia de daño dentro de un periodo de tiempo determinado o morirá."
+    },
+
+    {
+        "agent_name": "Vyse",
+        "icon": "Shear.webp",
+        "name": "Cortacaminos",
+        "description": "EQUIPA filamentos de metal líquido. DISPARA para colocar una pared oculta a modo de trampa. Cuando un enemigo la cruce, una pared indestructible saldrá del suelo detrás suyo. La pared durará un breve periodo antes de disiparse."
+    },
+
+    {
+        "agent_name": "Vyse",
+        "icon": "Arc_Rose.webp",
+        "name": "Rosa Metálica",
+        "description": "EQUIPA una Rosa Metálica. Apunta a una superficie y DISPARA para colocar una Rosa Metálica camuflada, o usa el DISPARO SECUNDARIO para colocarla al otro lado de la superficie seleccionada. REUTILÍZALA para cegar a todos los jugadores que la vean. Puedes recogerla para VOLVER A COLOCARLA en otro lugar."
+    },
+
+    {
+        "agent_name": "Vyse",
+        "icon": "Razorvine.webp",
+        "name": "Enredadera Filosa",
+        "description": "EQUIPA un nido de metal líquido. DISPARA para lanzarlo. Tras aterrizar, el nido se vuelve invisible. Al ACTIVARSE, se extiende hasta convertirse en una enredadera filosa grande que ralentizará e infligirá daño a todos los jugadores que se muevan a través de ella."
+    },
+
+    {
+        "agent_name": "Vyse",
+        "icon": "Steel_Garden.webp",
+        "name": "Jardín Magnético",
+        "description": "EQUIPA un matorral de metal líquido. DISPARA para lanzar el metal que sale de ti como un torrente de espinas metálicas sobre el campo de batalla, lo que BLOQUEA las armas principales de los enemigos tras una breve carga."
+    },
+
+    {
+        "agent_name": "Tejo",
+        "icon": "Stealth_Drone.webp",
+        "name": "Dron Furtivo",
+        "description": "EQUIPA un dron de sigilo. DISPARA para lanzar el dron hacia adelante y asumir el control directo de su movimiento. DISPARA de nuevo para activar un pulso que suprime y revela a los enemigos impactados."
+    },
+
+    {
+        "agent_name": "Tejo",
+        "icon": "Special_Delivery.webp",
+        "name": "Entrega Especial",
+        "description": "EQUIPA una granada pegajosa y DISPARA para lanzarla. La granada se adhiere a la primera superficie que toca y explota, lo que conmociona a los objetivos atrapados en la explosión. Usa el DISPARO SECUNDARIO para lanzar la granada con un solo rebote."
+    },
+
+    {
+        "agent_name": "Tejo",
+        "icon": "Guided_Salvo.webp",
+        "name": "Misiles Crucero",
+        "description": "EQUIPA un sistema de apuntado con RA. DISPARA para seleccionar hasta dos ubicaciones de objetivos en el mapa. Usa el DISPARO SECUNDARIO para lanzar misiles que navegan automáticamente hacia ubicaciones objetivo y detonan al aterrizar."
+    },
+
+    {
+        "agent_name": "Tejo",
+        "icon": "Armageddon.webp",
+        "name": "Armagedón",
+        "description": "EQUIPA un mapa de fijación de objetivo de ataque táctico. DISPARA para seleccionar el punto de origen del ataque. DISPARA de nuevo para fijar el punto final y lanzar el ataque con el fin de liberar una ola de explosiones por el camino del ataque. Usa el DISPARO SECUNDARIO durante la fijación de objetivo del mapa para cancelar el punto de origen."
+    }
+
+]

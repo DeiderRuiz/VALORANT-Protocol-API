@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Bind",
+        "photo": "Bind.webp",
+        "description": "Dos sitios. No hay medio. Tienes que elegir: izquierda o derecha. ¿Cuál va a ser entonces? Ambos ofrecen rutas directas para los atacantes, y un par de teletransportadores unidireccionales facilitan los flanqueos."
+    },
+
+    {
+        "name": "Haven",
+        "photo": "Haven.webp",
+        "description": "Bajo un monasterio olvidado, resuena el estruendo de los agentes rivales que luchan por el control de tres sitios. Hay más territorio que defender, pero los defensores pueden aprovechar el espacio extra para realizar empujes agresivos."
+    },
+
+    {
+        "name": "Split",
+        "photo": "Split.webp",
+        "description": "Si quieres ir lejos, debes subir. Un par de sitios divididos por un centro elevado permite un movimiento rápido por medio de dos ascensores de cuerda. Cada sitio cuenta con una gran torre vital para el control. Recuerda mirar arriba antes de que todo vuele por los aires."
+    },
+
+    {
+        "name": "Ascent",
+        "photo": "Ascent.webp",
+        "description": "Un campo abierto para pequeñas batallas de posicionamiento y desgaste dividen Ascenso en dos sitios. Puedes fortificar cada uno con puertas de bombas irreversibles; una vez puestas, tendrás que destruirlas o encontrar otra forma de pasar. Cede el menor territorio posible."
+    },
+
+    {
+        "name": "Icebox",
+        "photo": "Icebox.webp",
+        "description": "Tu próximo campo de batalla es un sitio de excavación secreto de Kingdom en algún lugar del ártico. Los dos sitios para plantar están protegidos tanto por nieve como por metal, y no es fácil acceder a ellos de forma horizontal. Aprovecha las tirolesas y nunca te verán venir."
+    },
+
+    {
+        "name": "Breeze",
+        "photo": "Breeze.webp",
+        "description": "Disfruta de la vista de ruinas históricas o cuevas junto al mar en este paraíso tropical. Pero trae algo con que cubrirte del sol... y de los disparos a larga distancia. Lo necesitarás en estos grandes espacios abiertos. Cuida los flancos y siente la brisa."
+    },
+
+    {
+        "name": "Fracture",
+        "photo": "Fracture.webp",
+        "description": "Un centro de investigación ultrasecreto dividido por un experimento fallido de radianita. Con opciones de defensa tan divididas como el mismo mapa, la elección es tuya: enfrentar a los atacantes en su propio territorio o cerrar las escotillas y resistir el asalto."
+    },
+
+    {
+        "name": "Pearl",
+        "photo": "Pearl.webp",
+        "description": "Los atacantes avanzan hacia los defensores en este mapa de dos sitios, ambientado en una ciudad submarina. Pearl es un mapa enfocado en el entorno, sin mecánicas. Lleva la batalla hacia un Mid compacto o a zonas más extendidas en nuestro primer mapa en la Tierra Omega."
+    },
+
+    {
+        "name": "Lotus",
+        "photo": "Lotus.webp",
+        "description": "Una misteriosa estructura cuyos muros resguardan un conducto astral irradia poder ancestral. Inmensas y monolíticas puertas brindan una variedad de oportunidades de movimiento y abren el camino a tres misteriosos sitios."
+    },
+
+    {
+        "name": "Sunset",
+        "photo": "Sunset.webp",
+        "description": "Un desastre en una instalación local de Kingdom amenaza con sepultar el vecindario completo. Visita tu camión de comida favorito y luego lleva la pelea a la ciudad en este mapa tradicional de tres carriles."
+    },
+
+    {
+        "name": "Abyss",
+        "photo": "Abyss.webp",
+        "description": "Contempla la oscuridad de Abyss, una base clandestina en las profundidades de un abismo infinito e insondable. Aprovecha las alturas para crear jugadas ingeniosas con tus utilidades. Un alto riesgo puede otorgar grandes recompensas, solo hay que ejecutarlo a la perfección."
+    }
+]
