@@ -1,4 +1,4 @@
-#!/bib/Bash
+#!/bin/sh
 
 # Iniciar php-fpm en background
 php-fpm &
@@ -18,4 +18,4 @@ php artisan route:cache
 php artisan view:cache
 
 # Iniciar ngix
-ngnix -g "daemon off;"
+nginx -g "daemon off;"

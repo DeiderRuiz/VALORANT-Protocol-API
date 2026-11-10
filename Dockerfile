@@ -46,7 +46,8 @@ COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Script de arranque
 COPY docker/entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+RUN sed -i 's/\r$//' /entrypoint.sh \
+    && chmod +x /entrypoint.sh
 
 EXPOSE 10000
 
