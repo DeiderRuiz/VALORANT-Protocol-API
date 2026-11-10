@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     nginx \
     git \
     unzip \
+    libpq-dev \
     libpng-dev \
     libjpeg62-turbo-dev \
     libfreetype6-dev \
