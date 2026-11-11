@@ -1,19 +1,17 @@
+
 #!/bin/sh
 set -e
 
-# Iniciar php-fpm en background
-php-fpm &
-
-# Esperar un poco
-sleep 3
-
-# Migraciones (opcional)
+# Ejecutar migraciones
 php artisan migrate --seed --force -vvv
 
-# Cachear config
+# Cachear configuración y rutas
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 
-# Iniciar ngix
+# Iniciar PHP-FPM en segundo plano
+php-fpm -D
+
+# Iniciar Nginx en primer plano
 nginx -g "daemon off;"
