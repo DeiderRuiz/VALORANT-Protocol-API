@@ -8,7 +8,7 @@ php-fpm &
 sleep 3
 
 # Migraciones (opcional)
-php artisan migrate --seed --force
+php artisan migrate --seed --force -vvv
 
 # Cachear config
 php artisan config:cache
