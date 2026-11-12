@@ -25,7 +25,7 @@ return new class extends Migration
                 'abort_rejected',
                 'abort',
                 'report_submitted',
-                'mission_completed '
+                'mission_completed'
             ]);
             $table->text('description');
             $table->text('details')->nullable();

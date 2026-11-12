@@ -2,11 +2,6 @@
 #!/bin/sh
 set -e
 
-php artisan optimize:clear
-
-# Ejecutar migraciones
-php artisan migrate --seed --force -vvv
-
 # Cachear configuración y rutas
 php artisan config:cache
 php artisan route:cache

@@ -13,7 +13,7 @@ class NationalitySeeder extends Seeder
      */
     public function run(): void
     {
-        $nationalities = json_decode(file_get_contents(database_path('data/countries.json')), true);
+        $nationalities = json_decode(file_get_contents(database_path('data/countries2.json')), true);
 
         foreach ($nationalities as $nationality) {
             Nationality::create([
