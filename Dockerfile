@@ -25,10 +25,10 @@ RUN docker-php-ext-install \
     gd \
     zip
 
-RUN grep -nE 'catch_workers_output|error_log|log_errors' \
-    /usr/local/etc/php-fpm.d/www.conf || true
-
-RUN php -i | grep -E 'error_log|log_errors|display_errors'
+RUN sed -i \
+    -e 's/^;catch_workers_output =.*/catch_workers_output = yes/' \
+    -e 's/^;php_admin_flag\[log_errors\] =.*/php_admin_flag[log_errors] = on/' \
+    /usr/local/etc/php-fpm.d/www.conf
 
 # Instalar composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
