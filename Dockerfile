@@ -25,8 +25,8 @@ RUN docker-php-ext-install \
     gd \
     zip
 
-RUN grep -E '^(catch_workers_output|php_admin_value\[error_log\]|php_admin_flag\[log_errors\])' \
-    /usr/local/etc/php-fpm.d/www.conf
+RUN grep -nE 'catch_workers_output|error_log|log_errors' \
+    /usr/local/etc/php-fpm.d/www.conf || true
 
 RUN php -i | grep -E 'error_log|log_errors|display_errors'
 
