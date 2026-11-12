@@ -1,4 +1,3 @@
-
 #!/bin/sh
 set -e
 
@@ -8,7 +7,7 @@ php artisan route:cache
 php artisan view:cache
 
 # Iniciar PHP-FPM en segundo plano
-php-fpm -D
+php-fpm -F &
 
 # Iniciar Nginx en primer plano
 nginx -g "daemon off;"
