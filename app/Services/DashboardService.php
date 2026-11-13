@@ -11,6 +11,7 @@ class DashboardService
 {
     public function getDashboardData(Agent $agent){
         
+        return DB::transaction(function () use ($agent){
             // Cantidad de misiones completas (Exitosas y fallidas)
             $myMissionsCompleted = $agent->missions()->where('statement', 'completed')->count();
 
@@ -71,5 +72,6 @@ class DashboardService
                     'victoryRate' => $victoryRate,
                 ],
             ];
+        });
     }
 }
