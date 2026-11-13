@@ -23,7 +23,7 @@ class DashboardController extends Controller
     public function index( Request $request){
         try {
             // Agente logeado
-            $agent = $request->user()->agent;
+            $agent = $request->user()->agent()->with(['abilities', 'nationality', 'class'])->first();
             $getData = $this->dashboardService->getDashboardData($agent);
 
             return response()->json($getData, 200);
