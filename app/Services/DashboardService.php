@@ -75,24 +75,19 @@ class DashboardService
         }); */
         return DB::transaction(function () use ($agent) {
 
-            $pdo = DB::connection()->getPdo();
-
-            $result = $pdo->prepare("
-                SELECT COUNT(*)
-                FROM mission_agents
-                INNER JOIN missions
-                    ON missions.id = mission_agents.mission_id
-                WHERE mission_agents.agent_id = ?
-                AND missions.statement = ?
-            ");
+            $first = DB::select(
+                'SELECT COUNT(*) AS total
+                 FROM mission_agents
+                 INNER JOIN missions
+                 ON missions.id = mission_agents.mission_id
+                 WHERE mission_agents.agent_id = ?
+                 AND missions.statement = ?',
+                [$agent->id, 'completed']
+            );
         
-            $result->execute([$agent->id, 'completed']);
-        
-            $first = $result->fetchColumn();
-        
-            $checkpoint = $pdo->query(
-                "SELECT CURRENT_TIMESTAMP"
-            )->fetchColumn();
+            $checkpoint = DB::select(
+                'SELECT CURRENT_TIMESTAMP AS server_time'
+            );
         
             return [
                 'first' => $first,
