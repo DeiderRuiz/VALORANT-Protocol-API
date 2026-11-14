@@ -21,19 +21,10 @@ class DashboardController extends Controller
 
     // Obtener datos para el Dashboard
     public function index( Request $request){
-        try {
-            // Agente logeado
-            $agent = $request->user()->agent()->with(['abilities', 'nationality', 'class'])->first();
-            $getData = $this->dashboardService->getDashboardData($agent);
+        // Agente logeado
+        $agent = $request->user()->agent()->with(['abilities', 'nationality', 'class'])->first();
+        $getData = $this->dashboardService->getDashboardData($agent);
 
-            return response()->json($getData, 200);
-        } catch (\Throwable $e) {
-            return response()->json([
-                'message' => $e->getMessage(),
-                'file' => $e->getFile(),
-                'line' => $e->getLine(),
-                'trace' => $e->getTraceAsString(),
-            ], 422);
-        }
+        return response()->json($getData, 200);
     }
 }
