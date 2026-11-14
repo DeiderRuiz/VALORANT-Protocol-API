@@ -75,17 +75,24 @@ class DashboardService
         }); */
         return DB::transaction(function () use ($agent) {
 
-            $connection = DB::connection();
-
             $first = $agent->missions()->where('statement', 'completed')->count();
 
-            $pdo = $connection->getPdo();
+            try {
+                $checkpoint = DB::select(
+                    "SELECT current_timestamp AS server_time"
+                );
 
-            return [
-                'first' => $first,
-                'transaction_level' => $connection->transactionLevel(),
-                'pdo_in_transaction' => $pdo->inTransaction(),
-            ];
+                return [
+                    'first' => $first,
+                    'checkpoint' => $checkpoint,
+                ];
+        
+            } catch (\Throwable $e) {
+                return [
+                    'first' => $first,
+                    'checkpoint_error' => $e->getMessage(),
+                ];
+            }
         });
     }
 }
