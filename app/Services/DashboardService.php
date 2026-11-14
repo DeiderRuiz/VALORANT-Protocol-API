@@ -9,13 +9,13 @@ use Illuminate\Support\Facades\DB;
 
 class DashboardService
 {
-    /* public function getDashboardData(Agent $agent){
+    public function getDashboardData(Agent $agent){
         
         return DB::transaction(function () use ($agent){
             // Cantidad de misiones completas (Exitosas y fallidas)
             $myMissionsCompleted = $agent->missions()->where('statement', 'completed')->count();
 
-            // Cantidad de misiones exitosas
+            /* // Cantidad de misiones exitosas
             $myVictories = $agent->missions()->where('statement', 'completed')
             ->where('result', 'success')->count();
 
@@ -47,7 +47,7 @@ class DashboardService
             $missionsCompleted = Mission::where('statement', 'completed')->count();
             $victories = Mission::where('statement', 'completed')->where('result', 'success')->count();
             $defeats = Mission::where('statement', 'completed')->where('result', 'failed')->count();
-            $victoryRate = $missionsCompleted > 0 ? round(($victories / $missionsCompleted) * 100, 2) : 0;
+            $victoryRate = $missionsCompleted > 0 ? round(($victories / $missionsCompleted) * 100, 2) : 0; */
 
             return [
                 'profile' => [
@@ -58,10 +58,10 @@ class DashboardService
                 ],
                 'myStatistics' => [
                     'missionsCompleted' => $myMissionsCompleted,
-                    'victories' => $myVictories,
-                    'victoryRate' => $myVictoryRate,
+                    /* 'victories' => $myVictories,
+                    'victoryRate' => $myVictoryRate, */
                 ],
-                'agents' => $agentsQuantity,
+                /* 'agents' => $agentsQuantity,
                 'maps' => $mapsQuantity,
                 'myLastMission' => $myLastMission,
                 'lastMission' => $lastMission,
@@ -70,29 +70,8 @@ class DashboardService
                     'victories' => $victories,
                     'defeats' => $defeats,
                     'victoryRate' => $victoryRate,
-                ],
+                ], */
             ];
         });
-    } */
-    public function getDashboardData(Agent $agent) {
-        try {
-            return DB::transaction(function () use ($agent) {
-    
-                $test = DB::select('SELECT 1 AS test');
-    
-                return [
-                    'transaction' => 'success',
-                    'database' => DB::connection()->getDatabaseName(),
-                    'result' => $test,
-                ];
-            });
-    
-        } catch (\Throwable $e) {
-            return [
-                'error' => $e->getMessage(),
-                'code' => $e->getCode(),
-                'previous' => $e->getPrevious()?->getMessage(),
-            ];
     }
-}
 }
