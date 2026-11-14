@@ -75,24 +75,29 @@ class DashboardService
         }); */
         return DB::transaction(function () use ($agent) {
 
-            $first = $agent->missions()->where('statement', 'completed')->count();
+            $pdo = DB::connection()->getPdo();
 
-            try {
-                $checkpoint = DB::select(
-                    "SELECT current_timestamp AS server_time"
-                );
-
-                return [
-                    'first' => $first,
-                    'checkpoint' => $checkpoint,
-                ];
+            $result = $pdo->prepare("
+                SELECT COUNT(*)
+                FROM mission_agents
+                INNER JOIN missions
+                    ON missions.id = mission_agents.mission_id
+                WHERE mission_agents.agent_id = ?
+                AND missions.statement = ?
+            ");
         
-            } catch (\Throwable $e) {
-                return [
-                    'first' => $first,
-                    'checkpoint_error' => $e->getMessage(),
-                ];
-            }
+            $result->execute([$agent->id, 'completed']);
+        
+            $first = $result->fetchColumn();
+        
+            $checkpoint = $pdo->query(
+                "SELECT CURRENT_TIMESTAMP"
+            )->fetchColumn();
+        
+            return [
+                'first' => $first,
+                'checkpoint' => $checkpoint,
+            ];
         });
     }
 }
