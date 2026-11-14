@@ -11,7 +11,7 @@ class DashboardService
 {
     public function getDashboardData(Agent $agent){
         
-        /* return DB::transaction(function () use ($agent){
+        return DB::transaction(function () use ($agent){
             // Cantidad de misiones completas (Exitosas y fallidas)
             $myMissionsCompleted = $agent->missions()->where('statement', 'completed')->count();
 
@@ -71,27 +71,6 @@ class DashboardService
                     'defeats' => $defeats,
                     'victoryRate' => $victoryRate,
                 ],
-            ];
-        }); */
-        return DB::transaction(function () use ($agent) {
-
-            $first = DB::select(
-                'SELECT COUNT(*) AS total
-                 FROM mission_agents
-                 INNER JOIN missions
-                 ON missions.id = mission_agents.mission_id
-                 WHERE mission_agents.agent_id = ?
-                 AND missions.statement = ?',
-                [$agent->id, 'completed']
-            );
-        
-            $checkpoint = DB::select(
-                'SELECT CURRENT_TIMESTAMP AS server_time'
-            );
-        
-            return [
-                'first' => $first,
-                'checkpoint' => $checkpoint,
             ];
         });
     }
