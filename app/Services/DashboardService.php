@@ -15,11 +15,11 @@ class DashboardService
             // Cantidad de misiones completas (Exitosas y fallidas)
             $myMissionsCompleted = $agent->missions()->where('statement', 'completed')->count();
 
-            /* // Cantidad de misiones exitosas
+            // Cantidad de misiones exitosas
             $myVictories = $agent->missions()->where('statement', 'completed')
             ->where('result', 'success')->count();
 
-            // Promedio de victorias
+            /* // Promedio de victorias
             $myVictoryRate = $myMissionsCompleted > 0 ? round(($myVictories / $myMissionsCompleted) * 100, 2) : 0;
 
             //Cantidad de agentes
@@ -58,8 +58,8 @@ class DashboardService
                 ],
                 'myStatistics' => [
                     'missionsCompleted' => $myMissionsCompleted,
-                    /* 'victories' => $myVictories,
-                    'victoryRate' => $myVictoryRate, */
+                    'victories' => $myVictories,
+                    // 'victoryRate' => $myVictoryRate,
                 ],
                 /* 'agents' => $agentsQuantity,
                 'maps' => $mapsQuantity,
