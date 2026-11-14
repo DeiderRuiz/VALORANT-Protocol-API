@@ -12,12 +12,12 @@ class DashboardService
     public function getDashboardData(Agent $agent){
         
         return DB::transaction(function () use ($agent){
-            // Cantidad de misiones completas (Exitosas y fallidas)
-            $myMissionsCompleted = $agent->missions()->where('statement', 'completed')->count();
-
             // Cantidad de misiones exitosas
             $myVictories = $agent->missions()->where('statement', 'completed')
             ->where('result', 'success')->count();
+            
+            // Cantidad de misiones completas (Exitosas y fallidas)
+            $myMissionsCompleted = $agent->missions()->where('statement', 'completed')->count();
 
             /* // Promedio de victorias
             $myVictoryRate = $myMissionsCompleted > 0 ? round(($myVictories / $myMissionsCompleted) * 100, 2) : 0;
