@@ -75,16 +75,16 @@ class DashboardService
         }); */
         return DB::transaction(function () use ($agent) {
 
+            $connection = DB::connection();
+
             $first = $agent->missions()->where('statement', 'completed')->count();
 
-            DB::select('SELECT 1 AS checkpoint');
-
-            $second = $agent->missions()->where('statement', 'completed')->where('result', 'success')->count();
+            $pdo = $connection->getPdo();
 
             return [
                 'first' => $first,
-                'checkpoint' => true,
-                'second' => $second,
+                'transaction_level' => $connection->transactionLevel(),
+                'pdo_in_transaction' => $pdo->inTransaction(),
             ];
         });
     }
