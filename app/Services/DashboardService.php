@@ -11,13 +11,13 @@ class DashboardService
 {
     public function getDashboardData(Agent $agent){
         
-        return DB::transaction(function () use ($agent){
+        /* return DB::transaction(function () use ($agent){
+            // Cantidad de misiones completas (Exitosas y fallidas)
+            $myMissionsCompleted = $agent->missions()->where('statement', 'completed')->count();
+
             // Cantidad de misiones exitosas
             $myVictories = $agent->missions()->where('statement', 'completed')
             ->where('result', 'success')->count();
-
-            /* // Cantidad de misiones completas (Exitosas y fallidas)
-            $myMissionsCompleted = $agent->missions()->where('statement', 'completed')->count();
 
             // Promedio de victorias
             $myVictoryRate = $myMissionsCompleted > 0 ? round(($myVictories / $myMissionsCompleted) * 100, 2) : 0;
@@ -47,7 +47,7 @@ class DashboardService
             $missionsCompleted = Mission::where('statement', 'completed')->count();
             $victories = Mission::where('statement', 'completed')->where('result', 'success')->count();
             $defeats = Mission::where('statement', 'completed')->where('result', 'failed')->count();
-            $victoryRate = $missionsCompleted > 0 ? round(($victories / $missionsCompleted) * 100, 2) : 0; */
+            $victoryRate = $missionsCompleted > 0 ? round(($victories / $missionsCompleted) * 100, 2) : 0;
 
             return [
                 'profile' => [
@@ -57,11 +57,11 @@ class DashboardService
                     'class' => $agent->class->name,
                 ],
                 'myStatistics' => [
-                    // 'missionsCompleted' => $myMissionsCompleted,
+                    'missionsCompleted' => $myMissionsCompleted,
                     'victories' => $myVictories,
-                    // 'victoryRate' => $myVictoryRate,
+                    'victoryRate' => $myVictoryRate,
                 ],
-                /* 'agents' => $agentsQuantity,
+                'agents' => $agentsQuantity,
                 'maps' => $mapsQuantity,
                 'myLastMission' => $myLastMission,
                 'lastMission' => $lastMission,
@@ -70,7 +70,27 @@ class DashboardService
                     'victories' => $victories,
                     'defeats' => $defeats,
                     'victoryRate' => $victoryRate,
-                ], */
+                ],
+            ];
+        }); */
+        return DB::transaction(function () use ($agent) {
+
+            $first = DB::table('mission_agents')
+                ->join('missions', 'missions.id', '=', 'mission_agents.mission_id')
+                ->where('mission_agents.agent_id', $agent->id)
+                ->where('missions.statement', 'completed')
+                ->count();
+
+            $second = DB::table('mission_agents')
+                ->join('missions', 'missions.id', '=', 'mission_agents.mission_id')
+                ->where('mission_agents.agent_id', $agent->id)
+                ->where('missions.statement', 'completed')
+                ->where('missions.result', 'success')
+                ->count();
+        
+            return [
+                'completed' => $first,
+                'victories' => $second,
             ];
         });
     }
