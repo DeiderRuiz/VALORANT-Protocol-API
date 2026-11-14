@@ -75,22 +75,24 @@ class DashboardService
         }); */
         return DB::transaction(function () use ($agent) {
 
-            $first = DB::table('mission_agents')
-                ->join('missions', 'missions.id', '=', 'mission_agents.mission_id')
-                ->where('mission_agents.agent_id', $agent->id)
-                ->where('missions.statement', 'completed')
-                ->count();
+            $connection = DB::connection();
 
-            $second = DB::table('mission_agents')
-                ->join('missions', 'missions.id', '=', 'mission_agents.mission_id')
-                ->where('mission_agents.agent_id', $agent->id)
-                ->where('missions.statement', 'completed')
-                ->where('missions.result', 'success')
-                ->count();
-        
+            $before = $connection->transactionLevel();
+
+            $first = $agent->missions()->where('statement', 'completed')->count();
+
+            $afterFirst = $connection->transactionLevel();
+
+            $second = $agent->missions()->where('statement', 'completed')->where('result', 'success')->count();
+
+            $afterSecond = $connection->transactionLevel();
+
             return [
-                'completed' => $first,
-                'victories' => $second,
+                'before' => $before,
+                'afterFirst' => $afterFirst,
+                'afterSecond' => $afterSecond,
+                'first' => $first,
+                'second' => $second,
             ];
         });
     }
