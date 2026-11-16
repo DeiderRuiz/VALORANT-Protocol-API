@@ -26,7 +26,7 @@ class MapSeeder extends Seeder
                 file_get_contents(public_path('maps/' . basename($map['photo'])))
             );
 
-            Map::create([
+            Map::firstOrCreate([
                 'name' => $map['name'],
                 'photo' => $photoPath,
                 'description' => $map['description'],

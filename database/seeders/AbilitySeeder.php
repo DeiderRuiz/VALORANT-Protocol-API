@@ -31,7 +31,7 @@ class AbilitySeeder extends Seeder
                 file_get_contents(public_path('agents/' . $slug . '/' . basename($ability['icon'])))
             );
 
-            Ability::create([
+            Ability::firstOrCreate([
                 'agent_id' => $agents[$ability['agent_name']],
                 'icon' => $iconPath,
                 'name' => $ability['name'],

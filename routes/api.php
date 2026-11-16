@@ -40,13 +40,13 @@ Route::middleware(['auth:api', 'role:admin'])->group(function(){
     Route::patch('/maps/{map}', [MapController::class, 'editMap']);
 
     Route::get('/countries', function () {
-    return response()->json(
-        json_decode(
-            Storage::disk('public')->get('countries.json'),
-            true
-        )
-    );
-});
+        return response()->json(
+            json_decode(
+                file_get_contents(database_path('data/countries.json')),
+                true
+            )
+        );
+    });
 });
 
 //Rutas para roles admin y assistant

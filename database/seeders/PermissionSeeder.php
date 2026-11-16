@@ -13,12 +13,12 @@ class PermissionSeeder extends Seeder
      */
     public function run(): void
     {
-        Permission::create(['name' => 'create users']);
-        Permission::create(['name' => 'create abilities']);
-        Permission::create(['name' => 'create maps']);
-        Permission::create(['name' => 'create missions']);
-        Permission::create(['name' => 'edit abilities']);
-        Permission::create(['name' => 'edit maps']);
-        Permission::create(['name' => 'edit missions']);
+        Permission::firstOrCreate(['name' => 'create users']);
+        Permission::firstOrCreate(['name' => 'create abilities']);
+        Permission::firstOrCreate(['name' => 'create maps']);
+        Permission::firstOrCreate(['name' => 'create missions']);
+        Permission::firstOrCreate(['name' => 'edit abilities']);
+        Permission::firstOrCreate(['name' => 'edit maps']);
+        Permission::firstOrCreate(['name' => 'edit missions']);
     }
 }

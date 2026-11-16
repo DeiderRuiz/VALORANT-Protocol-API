@@ -13,9 +13,9 @@ class MissionTypeSeeder extends Seeder
      */
     public function run(): void
     {
-        MissionType::create(['name' => 'ataque']);
-        MissionType::create(['name' => 'defensa']);
-        MissionType::create(['name' => 'inteligencia']);
-        MissionType::create(['name' => 'emergencia']);
+        MissionType::firstOrCreate(['name' => 'ataque']);
+        MissionType::firstOrCreate(['name' => 'defensa']);
+        MissionType::firstOrCreate(['name' => 'inteligencia']);
+        MissionType::firstOrCreate(['name' => 'emergencia']);
     }
 }

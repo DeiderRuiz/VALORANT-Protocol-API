@@ -16,7 +16,7 @@ class NationalitySeeder extends Seeder
         $nationalities = json_decode(file_get_contents(database_path('data/countries2.json')), true);
 
         foreach ($nationalities as $nationality) {
-            Nationality::create([
+            Nationality::firstOrCreate([
                 'country_name' => $nationality['country_name'],
                 'country_code' => $nationality['country_code'],
             ]);

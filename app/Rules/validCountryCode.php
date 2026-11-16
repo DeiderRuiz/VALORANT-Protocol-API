@@ -21,7 +21,7 @@ class validCountryCode implements ValidationRule
             true
         );
 
-        $success = Storage::disk('public')->exists('countries.json');
+        $success = file_get_contents(database_path('data/countries.json'));
         if (!$success) {
             $fail('Nada.');
         }

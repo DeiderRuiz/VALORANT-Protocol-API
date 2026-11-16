@@ -46,7 +46,7 @@ class AgentClassSeeder extends Seeder
                 file_get_contents(public_path('roles/' . $clase['icon']))
             );
 
-            AgentClasses::create([
+            AgentClasses::firstOrCreate([
                 'icon' => $iconPath,
                 'name' => $clase['name'],
                 'description' => $clase['description'],

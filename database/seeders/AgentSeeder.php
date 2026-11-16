@@ -40,7 +40,7 @@ class AgentSeeder extends Seeder
                 file_get_contents(public_path('agents/' . $slug . '/' . basename($agent['agent_photo'])))
             );
 
-            Agent::create([
+            Agent::firstOrCreate([
                 'user_id' => $users[$agent['user_email']],
                 'name' => $agent['name'],
                 'bio' => $agent['bio'],

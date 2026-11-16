@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
         $users = json_decode(file_get_contents(database_path('data/users.json')), true);
 
         foreach ($users as $user) {
-            User::create([
+            User::firstOrCreate([
                 'uuid' => Str::uuid()->toString(),
                 'email' => $user['email'],
                 'password' => bcrypt($user['password']),
