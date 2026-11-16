@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+# Crear enlace simbólico para archivos públicos
+php artisan storage:link
+
 # Cachear configuración y rutas
 php artisan config:cache
 php artisan route:cache
