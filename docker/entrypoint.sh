@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+# Crear migraciones
+php artisan migrate --seed --force
+
 # Crear enlace simbólico para archivos públicos
 php artisan storage:link
 
