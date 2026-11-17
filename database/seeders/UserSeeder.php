@@ -21,7 +21,9 @@ class UserSeeder extends Seeder
 
         foreach ($users as $user) {
             User::firstOrCreate([
-                'uuid' => Str::uuid()->toString(),
+                'uuid' => $user['uuid'],
+            ],
+            [
                 'email' => $user['email'],
                 'password' => bcrypt($user['password']),
                 'role_id' => $role[$user['role_name']],
