@@ -16,7 +16,7 @@ class AgentSeeder extends Seeder
      */
     public function run(): void
     {
-        $users = DB::table('users')->pluck('id', 'email');
+        $users = DB::table('users')->pluck('id', 'uuid');
         $roles = DB::table('agent_classes')->pluck('id', 'name');
         $nationalities = DB::table('nationalities')->pluck('id', 'country_name');
 
