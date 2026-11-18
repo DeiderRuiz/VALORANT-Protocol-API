@@ -27,7 +27,7 @@ class User extends Authenticatable implements JWTSubject
 
     protected static function booted(){
         static::creating(function ($user) {
-            $user->uuid = Str::uuid();
+            $user->uuid ??= (string) Str::uuid();
         });
     }
 
