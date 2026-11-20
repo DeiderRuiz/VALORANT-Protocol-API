@@ -29,6 +29,6 @@ class MapService
         }
 
         $map->update($updateData);
-        return $map;
+        return ['mapa' => $map, 'file' => $data['photo']];
     }
 }

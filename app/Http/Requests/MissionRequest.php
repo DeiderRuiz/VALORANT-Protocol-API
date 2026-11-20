@@ -28,7 +28,7 @@ class MissionRequest extends FormRequest
             'title' => 'required|string|min:3|max:100',
             'objective' => 'required|string|min:10|max:1000',
             'description' => 'required|string|min:20|max:3000',
-            'deadline' => 'required|date|after:' . now()->addDay(),
+            'deadline' => 'required|date|after:now',
             'type_id' => 'required|integer|exists:mission_types,id',
             'priority' => 'required|in:baja,media,alta,critica',
             'map_id' => 'required|integer|exists:maps,id',
