@@ -26,18 +26,28 @@ class MapService
         ];
 
         if (isset($data['photo'])) {
-            $path = $data['photo']->store('maps', 'public');
-            if (isset($data['photo'])) {
-                $path = $data['photo']->store('maps', 'public');
-            
-                return response()->json([
+            $file = $data['photo'];
+
+            $path = 'maps/test-' . uniqid() . '.' . $file->extension();
+
+            $contents = file_get_contents($file->getRealPath());
+
+            $written = Storage::disk('public')->put($path, $contents);
+
+            return response()->json([
+                'file' => [
+                    'valid' => $file->isValid(),
+                    'error' => $file->getError(),
+                    'real_path' => $file->getRealPath(),
+                    'temp_exists' => file_exists($file->getRealPath()),
+                    'size' => $file->getSize(),
+                ],
+                'storage' => [
+                    'written' => $written,
+                    'exists' => Storage::disk('public')->exists($path),
                     'path' => $path,
-                    'exists' => $path !== false
-                        ? Storage::disk('public')->exists($path)
-                        : false,
-                    'directory_exists' => Storage::disk('public')->exists('maps'),
-                ]);
-            }
+                ],
+            ]);
             /* $updateData['photo'] = $data['photo']->store('maps', 'public'); */
         }
 
