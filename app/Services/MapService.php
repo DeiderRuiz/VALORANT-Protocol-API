@@ -31,27 +31,23 @@ class MapService
             $path = 'maps/test-' . uniqid() . '.' . $file->extension();
 
             $contents = file_get_contents($file->getRealPath());
-
-            $written = Storage::disk('public')->put($path, $contents);
-
-            return response()->json([
-                'file' => [
-                    'valid' => $file->isValid(),
-                    'error' => $file->getError(),
-                    'real_path' => $file->getRealPath(),
-                    'temp_exists' => file_exists($file->getRealPath()),
-                    'size' => $file->getSize(),
-                ],
-                'storage' => [
+            try {
+                $written = Storage::disk('public')->put($path, $contents);
+            
+                return response()->json([
                     'written' => $written,
-                    'exists' => Storage::disk('public')->exists($path),
-                    'path' => $path,
-                ],
-            ]);
+                ]);
+            } catch (\Throwable $e) {
+                return response()->json([
+                    'exception' => get_class($e),
+                    'message' => $e->getMessage(),
+                    'previous' => $e->getPrevious()?->getMessage(),
+                ], 500);
+            }
             /* $updateData['photo'] = $data['photo']->store('maps', 'public'); */
         }
 
         $map->update($updateData);
-        /* return $map; */
+        return $map;
     }
 }
