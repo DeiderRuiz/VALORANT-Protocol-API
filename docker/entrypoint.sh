@@ -4,16 +4,8 @@ set -e
 # Crear migraciones
 php artisan migrate --seed --force
 
-echo "=== STORAGE PERMISSIONS ==="
-
-ls -ld /var/www/storage
-ls -ld /var/www/storage/app
-ls -ld /var/www/storage/app/public
-ls -ld /var/www/storage/app/public/maps
-
-echo "=== PHP USER ==="
-
-id www-data
+# Corregir propiedad y permisos del almacenamiento
+chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
 # Crear enlace simbólico para archivos públicos
 php artisan storage:link
