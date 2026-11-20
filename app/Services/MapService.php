@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Models\Map;
+use Illuminate\Support\Facades\Storage;
 
 class MapService
 {
@@ -25,10 +26,15 @@ class MapService
         ];
 
         if (isset($data['photo'])) {
-            $updateData['photo'] = $data['photo']->store('maps', 'public');
+            $path = $data['photo']->store('maps', 'public');
+            /* $updateData['photo'] = $data['photo']->store('maps', 'public'); */
         }
 
         $map->update($updateData);
-        return ['mapa' => $map, 'file' => $data['photo']];
+        /* return $map; */
+        return response()->json([
+            'stored_path' => $path,
+            'stored' => Storage::disk('public')->exists($path ?: ''),
+        ]);
     }
 }
