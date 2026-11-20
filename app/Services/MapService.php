@@ -27,14 +27,21 @@ class MapService
 
         if (isset($data['photo'])) {
             $path = $data['photo']->store('maps', 'public');
+            if (isset($data['photo'])) {
+                $path = $data['photo']->store('maps', 'public');
+            
+                return response()->json([
+                    'path' => $path,
+                    'exists' => $path !== false
+                        ? Storage::disk('public')->exists($path)
+                        : false,
+                    'directory_exists' => Storage::disk('public')->exists('maps'),
+                ]);
+            }
             /* $updateData['photo'] = $data['photo']->store('maps', 'public'); */
         }
 
         $map->update($updateData);
         /* return $map; */
-        return response()->json([
-            'stored_path' => $path,
-            'stored' => Storage::disk('public')->exists($path ?: ''),
-        ]);
     }
 }
