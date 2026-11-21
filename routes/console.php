@@ -9,5 +9,4 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 
 Schedule::command('app:check-mission-deadlines')->everySixHours();
-/* Schedule::command('app:abort-expired-missions')->hourly(); */
-Schedule::command('app:abort-expired-missions')->dailyAt('16:16');
+Schedule::command('app:abort-expired-missions')->hourly();

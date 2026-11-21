@@ -86,8 +86,6 @@ Route::middleware(['auth:api', 'role:admin,assistant,agent'])->group(function(){
 
     Route::get('/profile', [UserController::class, 'showProfile']);
     Route::get('/profile/statistics', [UserController::class, 'showStatistics']);
-    Route::patch('/credentials/email', [UserController::class, 'updateUserEmail']);
-    Route::patch('/credentials/password', [UserController::class, 'updateUserPassword']);
 
     Route::post('/missions/{mission:code}/report', [ReportController::class, 'newReport']);
     Route::post('/missions/{mission:code}/abort/request', [AbortController::class, 'requestAbort']);
@@ -95,6 +93,11 @@ Route::middleware(['auth:api', 'role:admin,assistant,agent'])->group(function(){
 
     Route::get('/notifications', [NotificationController::class, 'getNotifications']);
     Route::patch('/notifications/{notificationPivot}/read', [NotificationController::class, 'readNotification']);
+});
+
+Route::middleware(['auth:api', 'role:admin,agent'])->group(function(){
+    Route::patch('/credentials/email', [UserController::class, 'updateUserEmail']);
+    Route::patch('/credentials/password', [UserController::class, 'updateUserPassword']);
 });
 
 // Esta ruta necesita racibir siempre el token 

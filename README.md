@@ -19,7 +19,7 @@ VALORANT Protocol es una API para una plataforma de gestión de proyectos y equi
 - **Middleware:** control de autenticación y autorización, con restricciones de acceso según los roles de usuario.
 - **Policies:** autorización de acciones específicas sobre las misiones según los permisos y la relación del usuario con ellas.
 - **Procesamiento asíncrono:** ejecución de trabajos en segundo plano mediante Jobs y colas para el envío de notificaciones.
-- **Tareas programadas:** Commands y Scheduler de Laravel para supervisar misiones inconclusas y gestionar notificaciones relacionadas con sus plazos.
+- **Tareas programadas:** Commands y Scheduler de Laravel para supervisar misiones inconclusas y gestionar notificaciones relacionadas con sus plazos. La ejecución automática de estas tareas se encuentra deshabilitada en el entorno de demostración debido a las limitaciones del servicio de hosting gratuito.
 
 ## Tecnologías usadas
 - Laravel 12
